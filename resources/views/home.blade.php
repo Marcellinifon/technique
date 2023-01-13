@@ -65,10 +65,15 @@
                                     </tr>
                                     @endforeach
                                 </table>
+                                <div class="mt-2 float-right">
+                                    <div class="d-flex ">
+                                        {!! $transactions->links() !!}
+                                    </div>
+                                </div>
                             </div>
                             <div class="tab-pane fade" id="nav-received" role="tabpanel"
                                 aria-labelledby="nav-mission-tab">
-                                <table id="myTable">
+                                <table id="myTable1">
                                     <tr class="header">
                                         <th style="width:10%;">De</th>
                                         <th style="width:20%;">Devise</th>
@@ -84,6 +89,11 @@
                                     </tr>
                                     @endforeach
                                 </table>
+                                <div class="mt-2">
+                                    <div class="d-flex">
+                                        {!! $transactions_reveived->links() !!}
+                                    </div>
+                                </div>
                             </div>
 
                         </div>

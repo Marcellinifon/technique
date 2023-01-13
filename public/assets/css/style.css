@@ -554,22 +554,22 @@ h6,
       margin-bottom: 12px;
     }
 
-    #myTable {
+    #myTable,#myTable1 {
       border-collapse: collapse;
       width: 100%;
       border: 1px solid #ddd;
       font-size: 18px;
     }
 
-    #myTable th, #myTable td {
+    #myTable th, #myTable td, #myTable1 th, #myTable1 td {
       text-align: left;
       padding: 12px;
     }
 
-    #myTable tr {
+    #myTable tr,#myTable1 tr  {
       border-bottom: 1px solid #ddd;
     }
 
-    #myTable tr.header, #myTable tr:hover {
+    #myTable tr.header, #myTable tr:hover, #myTable1 tr.header, #myTable1 tr:hover  {
       background-color: #f1f1f1;
     }

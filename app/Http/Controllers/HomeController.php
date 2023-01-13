@@ -27,8 +27,10 @@ class HomeController extends Controller
     public function index()
     {
         try {
-            $transactions = User::find(Auth::user()->id)->transaction;
-            $transactions_reveived = Transaction::where("receive_id","=",Auth::user()->id)->get();
+            // $transactions = User::find(Auth::user()->id)->transaction->paginate(10);
+            $transactions = Transaction::where('user_id','=',Auth::user()->id)->simplePaginate(15);
+            $transactions_reveived = Transaction::where("receive_id","=",Auth::user()->id)->simplePaginate(15);
+
             return view('home',[
                 'transactions'=>$transactions,
                 'transactions_reveived'=>$transactions_reveived,

@@ -61,7 +61,7 @@ function ajGet(url, success, error_callback) {
 }
 
 
-function myFilter(e) {
+function myFilter() {
     var input, filter, table, tr, td, i, txtValue;
     input = document.getElementById("myInput");
     filter = input.value.toUpperCase();

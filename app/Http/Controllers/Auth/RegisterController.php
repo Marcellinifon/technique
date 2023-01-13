@@ -75,7 +75,7 @@ class RegisterController extends Controller
     {
         return Solde::create([
             'user_id' => $id,
-            'amount' => 0,
+            'amount' => 50000.00,
         ]);
     }
 }
